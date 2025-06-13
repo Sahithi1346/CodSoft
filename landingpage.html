@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ahmedabad Flight Relief Fund</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+    header {
+      background: #a00;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #600;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    /* Hero with image slider */
+    .hero {
+      position: relative;
+      height: 300px;
+      overflow: hidden;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-slider {
+      position: absolute;
+      width: 400%;
+      height: 100%;
+      display: flex;
+      animation: slideImages 20s linear infinite;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .hero-slider img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    @keyframes slideImages {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-75%);
+      }
+    }
+
+    .cta-btn {
+      background: #e91e63;
+      padding: 15px 30px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 5px;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    .info,
+    .updates,
+    .fundraising,
+    .testimonials,
+    .video,
+    .social,
+    .contact-form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 40px 20px;
+      background: #fff;
+      text-align: center;
+    }
+
+    .info .box,
+    .update-box,
+    .testimonial,
+    .contact-form form {
+      flex: 1;
+      min-width: 250px;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      background: #eee;
+    }
+
+    .gallery img {
+      width: 30%;
+      margin: 5px;
+      border-radius: 5px;
+    }
+
+    .progress-container {
+      width: 80%;
+      background: #ddd;
+      border-radius: 5px;
+      margin: 20px auto;
+    }
+
+    .progress-bar {
+      background: #e91e63;
+      color: #fff;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      width: 65%;
+    }
+
+    .testimonial {
+      border-left: 5px solid #e91e63;
+      width: 60%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    .contact-form button {
+      background: #e91e63;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #600;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #donation-options {
+      display: none;
+      padding: 40px 20px;
+      background: #fff;
+      text-align: center;
+    }
+
+    #donation-options .donation-box {
+      margin: 20px auto;
+      max-width: 500px;
+      text-align: left;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    #donation-options img {
+      width: 150px;
+      height: 150px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Ahmedabad Flight 171 Relief Fund</h1>
+  <p>Supporting survivors, injured, and families of the June 12 crash victims.</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#how-to-help">How to Help</a>
+  <a href="#updates">Updates</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-slider">
+    <img src="https://s.yimg.com/ny/api/res/1.2/GKjbrva6mepdmnOWClbcmw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD04Mjg-/https%3A//media.zenfs.com/en/men_s_journal_718/0a3a96565def71a3a5c4e6991461b405" alt="Accident 1">
+    <img src="https://s.yimg.com/ny/api/res/1.2/RxQKAXr0lY2XiTauGKe5kw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTcyMA--/https%3A//media.zenfs.com/en/ap.org/a24ed6e44faad30231a0b9cfe49fe7ca" alt="Accident 2">
+    <img src="https://s.yimg.com/ny/api/res/1.2/FbpiRcoCa173KfCQexK.eA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyODA7aD05NjA-/https%3A//s.yimg.com/os/creatr-uploaded-images/2025-06/2c83b130-4771-11f0-b7ec-431039325715" alt="Accident 3">
+    <img src="https://dims.apnews.com/dims4/default/abb9836/2147483647/strip/true/crop/8640x5760%2B0%2B0/resize/599x399%21/quality/90/?url=https%3A%2F%2Fassets.apnews.com%2Fb4%2Fc9%2Fde44f8be4c6391bfa82243345d50%2Fap25163471901127.jpg" alt="Accident 4">
+  </div>
+  <div class="hero-text">
+    <h2>In Solidarity with Ahmedabad</h2>
+    <p>Over 269 lives lost, including 241 onboard and 28 on ground. Only 1 survivor.</p>
+    <a href="#donation-options" class="cta-btn" id="donate-btn">Donate Now</a>
+  </div>
+</section>
+
+<section class="info" id="about">
+  <div class="box">
+    <h3>The Tragedy</h3>
+    <p>On June 12, 2025, Air India Flight 171 crashed into B.J. Medical College hostel shortly after takeoff from Ahmedabad Airport.</p>
+  </div>
+  <div class="box">
+    <h3>Impact</h3>
+    <p>269 total deaths: 241 onboard, 28 on ground. Over 60 injured; around 50 medical students affected.</p>
+  </div>
+  <div class="box">
+    <h3>Relief Needs</h3>
+    <ul>
+      <li>Emergency medical aid and hospital support</li>
+      <li>Compensation for lost families</li>
+      <li>Rebuilding hostel & campus infrastructure</li>
+      <li>Psychological counseling services</li>
+    </ul>
+  </div>
+</section>
+
+<section class="updates" id="updates">
+  <h2>Latest Updates</h2>
+  <div class="update-box">
+    <p><strong>June 13, 2025:</strong> Over ₹5 crore raised in relief funds. Medical aid dispatched to affected students.</p>
+  </div>
+  <div class="update-box">
+    <p><strong>June 14, 2025:</strong> Psychological counseling sessions started for survivors and families.</p>
+  </div>
+</section>
+
+<section class="fundraising">
+  <h2>Fundraising Progress</h2>
+  <div class="progress-container">
+    <div class="progress-bar">₹6.5 crore raised of ₹10 crore goal</div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <h2>Voices from the Ground</h2>
+  <div class="testimonial">
+    <p>"The support we received helped us recover from the trauma. Thank you for standing with us." - Affected Student</p>
+  </div>
+  <div class="testimonial">
+    <p>"Volunteering for medical aid was an eye-opening experience. Every contribution matters." - Relief Worker</p>
+  </div>
+</section>
+
+<section class="video">
+  <div class="box">
+    <h2>Flight Path & Crash Site Visualization</h2>
+    <p>Watch how Flight 171 took off, its trajectory, and the crash site marked with a red line and rescue helicopter.</p>
+    <a href="https://news.sky.com/video/watch-flight-route-shows-air-india-plane-crashed-shortly-after-take-off-13382669" target="_blank" class="cta-btn">Watch Video</a>
+  </div>
+</section>
+
+<section class="info" id="contact">
+  <div class="box">
+    <h3>Contact Us</h3>
+    <p>Email: relief@ahmedabadflight.org<br />Hotline: +91‑79‑XXXX‑XXXX</p>
+  </div>
+  <div class="box">
+    <h3>Help Line</h3>
+    <p>24/7 support line for survivors and families needing assistance.</p>
+  </div>
+</section>
+
+<section id="donation-options">
+  <h2>Make a Donation</h2>
+  <p>Select a preferred method to contribute and help the victims of the tragedy.</p>
+
+  <div class="donation-box">
+    <h3>📱 UPI Payment</h3>
+    <p><strong>UPI ID:</strong> <code>ahmedabadrelief@upi</code></p>
+  </div>
+
+  <div class="donation-box">
+    <h3>🏦 Bank Transfer</h3>
+    <p><strong>Bank:</strong> State Bank of India</p>
+    <p><strong>Account Name:</strong> Ahmedabad Flight Relief Fund</p>
+    <p><strong>Account Number:</strong> 123456789012</p>
+    <p><strong>IFSC Code:</strong> SBIN0001234</p>
+  </div>
+
+  <button onclick="document.getElementById('donation-options').style.display='none'" class="cta-btn">Close</button>
+</section>
+
+<footer>
+  <p>&copy; 2025 Ahmedabad Flight Relief | All rights reserved</p>
+</footer>
+
+<script>
+  document.querySelectorAll('nav a').forEach((a) => {
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  document.getElementById('donate-btn').addEventListener('click', function (e) {
+    e.preventDefault();
+    const section = document.getElementById('donation-options');
+    section.style.display = 'block';
+    section.scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
+</body>
+</html>
